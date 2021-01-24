@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Zac's Personal Website</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/c04e834b9d.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/live-resume.css">
+  <!-- custom styling -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Vendor Styles-->
+  <!-- <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/> -->
+  <!-- <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/> -->
+  <!-- Main Theme Styles + Bootstrap-->
+  <!-- <link rel="stylesheet" media="screen" href="assets/css/theme.min.css"> -->
+</head>
+
+<body>
+  <header>
+    <a class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto" href="https://www.linkedin.com/in/zhihao-tang/" target="_blank">
+      <img src="assets/images/share.svg" alt="share" class="btn-img">Connect
+    </a>
+    <nav class="collapsible-nav" id="collapsible-nav">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="resume.html" class="nav-link">RESUME</a>
+      <a href="portfolio.html" class="nav-link active">PORTFOLIO</a>
+      <a href="blog.html" class="nav-link">BLOG</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+    </nav>
+    <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav" data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+  </header>
+  <div class="content-wrapper">
+    <aside>
+      <div class="profile-img-wrapper">
+        <img src="assets/images/profile.png" alt="profile">
+      </div>
+      <h1 class="profile-name">Zac Tang</h1>
+      <div class="text-center">
+        <span class="badge badge-white badge-pill profile-designation">2021 New Grad</span>
+      </div>
+      <nav class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100002588962709" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <!-- <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.linkedin.com/in/zhihao-tang/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ZTang813/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+      </nav>
+      <div class="widget">
+        <h5 class="widget-title">personal information</h5>
+        <div class="widget-content">
+          <!-- <p>BIRTHDAY : 15 April 1990</p> -->
+          <!-- <p>WEBSITE : www.example.com</p> -->
+          <p>PHONE : +1 917{-}678{-}9139</p>
+          <p>EMAIL : zt222{AT}cornell{DOT}edu</p>
+          <p>LOCATION : Sunnyvale, CA</p>
+          <hr>
+          <h5 class="widget-title">Software Engineering</h5>
+          <a href="assets/files/ZacTang.Resume.SoftwareDev.pdf" target="_blank">
+            <button class="btn btn-download-cv btn-primary rounded-pill mb-2">
+              <img src="assets/images/download.svg" alt="download" class="btn-img">Download CV</button></a>
+          <h5 class="widget-title">Quant Developing</h5>
+          <a href="assets/files/ZacTang.Resume.QuantDev.pdf" target="_blank">
+            <button class="btn btn-download-cv btn-primary rounded-pill mb-2">
+              <img src="assets/images/download.svg" alt="download" class="btn-img">Download CV</button></a>
+        </div>
+      </div>
+
+
+      <div class="widget card">
+        <div class="card-body">
+          <div class="widget-content">
+            <h5 class="widget-title card-title">EDUCATION</h5>
+            <p>Cornell University</p>
+            <p>M.Eng. in ORIE</p>
+            <p>FE concentration</p>
+            <p>GPA: 3.9</p>
+            <hr>
+            <p>New York Univerity</p>
+            <p>B.A. in Computer Science</p>
+            <p>B.A. in Mathematics</p>
+            <p>GPA: 3.6</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="widget card">
+        <div class="card-body">
+          <div class="widget-content">
+            <h5 class="widget-title card-title">Skills</h5>
+            <p>Java, Python, C++</p>
+            <p>SQL, MongoDB</p>
+            <p>Javascript, CSS, HTML</p>
+            <p>AWS, Azure</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
+    <main>
+      <h2 class="section-title">PORTFOLIO</h2>
+
+      <section id="portfolio" class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#sde" role="tab" aria-controls="sde" aria-selected="true">Software Engineering</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#ml" role="tab" aria-controls="ml" aria-selected="false">Machine Learning and Stats</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Others</a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content" id="myTabContent">
+          <!-- SDE -->
+          <div class="tab-pane fade show active" id="sde" role="tabpanel" aria-labelledby="sde-tab">
+            <section class="portfolio-section">
+              <h2 class="section-title"> </h2>
+              <div class="portfolio-wrapper hover-box">
+
+                <!-- Start of new card -->
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row">
+                        <img src="assets/images/symba_logo.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Internship: Symba</h1>
+                          <h5 class="text-muted">Feb - May 2020</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>HTML, CSS, <br>
+                            Javascript, Flask, <br>
+                            Babel, PostgreSQL, <br>
+                            Express.js, Node.js,<br>
+                            AWS (S3, RDS), Git
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h1 class="portfolio-item-title">Software Engineering Intern</h1>
+                      <p class="portfolio-item-description">Symba Intern Management Platform, San Francisco (Remote), CA</p>
+                      <hr>
+                      • Designed and extended a web-based platform that provides a novel solution in remote internship and staff management <br>
+                      • Delivered new features and managed progress via Agile development practices and used Git for version control <br>
+                      • Implemented a vector-based match-making algorithm to connect students with hiring managers on a skill-based setting<br>
+                      • Developed SQL schemas, tables, relations, automated backend commands and deployed backend on AWS storage and database servers (RDS and S3)<br>
+                      • Constructed an efficient and interactive user interface using React.js<br>
+                      <hr>
+                      <a href="https://github.com/ZTang813/" target="_blank"> <i class="fa fa-github-square fa-4x social social-gh"></i> </a>
+
+                      <!-- <i class="fa fa-external-link-square-alt fa-4x social social-gh"></i> -->
+                      </a>
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End of new card -->
+
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <div class="row">
+                        <img src="assets/images/dev.jpg" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Project: Online Survey Platform</h1>
+                          <h5 class="text-muted">In Progress</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>HTML, CSS<br>
+                            Javascript, Babel <br>
+                            MongoDB (Atlas), Express.js, <br>
+                            Node.js, Passport.js<br>
+                            EJS, Git<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <h1 class="portfolio-item-title"> Online Survey Platform</h1>
+                      <p class="portfolio-item-description">Cornell University, New York, NY</p>
+                      <hr>
+                      • Building a full-stack online survey platform for classmates and professors to initiate
+                      or submit anonymous online lecture feedback, featuring an unique graphical UI to hold attention, maximize user experience, and minimize time spent <br>
+                      • Designing schemas and manipulating database using MongoDB Atlas cloud server <br>
+                      • Handling backend HTTP responses using Express.js, Node.js and managing user credentials using Passport.js <br>
+                      • Utilizing React, Bootstrap and open-source libraries to display information, and adapting UI to different devices (laptops, browsers, smartphones, etc.) <br>
+                      <hr><a href="https://github.com/ZTang813/" target="_blank"><i class="fa fa-github-square fa-4x social social-gh"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <div class="row">
+                        <img src="assets/images/keeper.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Project: Keeper App</h1>
+                          <h5 class="text-muted">Jan 2021</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>React, Hooks<br>
+                            CSS, Javascript<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <h1 class="portfolio-item-title">Keeper Notebook App</h1>
+                      <p class="portfolio-item-description">Individual Project, Sunnyvale, CA</p>
+                      <hr>
+                      • Designed a small webapp that functions similiarly to Google's keeper app <br>
+                      • Tailored CSS to make everthing look nicer<br>
+                      <hr><a href="https://github.com/ZTang813/Keeper-Notebook-App" target="_blank"><i class="fa fa-github-square fa-4x social social-gh"></i></a>
+                      <a href="https://infinite-tundra-38759.herokuapp.com/" target="_blank"><i class="fa fa-external-link-square-alt fa-4x social social-gh"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </section>
+          </div>
+
+          <!-- ML -->
+          <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">
+            <section class="portfolio-section">
+              <h2 class="section-title"> </h2>
+              <div class="portfolio-wrapper hover-box">
+
+                <!-- Start of new card -->
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row">
+                        <img src="assets/images/rl.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Project: Reinforcement Learning Research</h1>
+                          <h5 class="text-muted">Sep - Dec 2020</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>Python, Numpy<br>
+                            TensorFlow<br>
+                            Reinforcement Learning<br>
+                            Neural Networks<br>
+                            Real-world Problem<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h1 class="portfolio-item-title"> Reinforcement Learning Research Student</h1>
+                      <p class="portfolio-item-description">Cornell University, New York, NY</p>
+                      <hr>
+                      • Applying reinforcement learning (Q-learning and Neural Networks) to high frequency market data to maximize profits <br>
+                      • Developing hypothetical test data using different statistical models based on prior assumptions <br>
+                      • Streamlining ML algorithms such as Naïve Bayes, Decision Trees, KNN and Random Forests to analyze input features <br>
+                      • Developing visualizations such as 3d-plots, heatmaps and animated plots for monthly presentations <br>
+                      • Backtesting optimal strategy on real data after successfully creating profitable traders in the simulated environment<br>
+                      <hr><a href="https://github.com/ZTang813/Cornell-UBS-CapstoneProject" target="_blank"><i class="fa fa-github-square fa-4x social social-gh"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of new card -->
+
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <div class="row">
+                        <img src="assets/images/wisdom_logo.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Intern: Wisdom Capital</h1>
+                          <h5 class="text-muted">May - Sep 2020</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>Python<br>
+                            Machine Learning<br>
+                            Statistics<br>
+                            Conference Papers<br>
+                            Independent Research<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <h1 class="portfolio-item-title"> Quantitative Developer</h1>
+                      <p class="portfolio-item-description">Wisdom Capital Assest Management, New York, NY</p>
+                      <hr>
+                      • Focused on analyzing, developing, and backtesting a variety of trading strategies <br>
+                      • Developed risk models and risk-neutral-density stock price forecasts based on short maturity option volatility smiles<br>
+                      • Built proficiency in several data sources, such as Bloomberg, Option Metrics and CBOE<br>
+                      • Organized and cleaned multiple sets of time-series data for backtesting in Python<br>
+                      • Communicated summaries and analysis of results to team via weekly group presentations<br>
+                      <hr><a href="http://www.wisdom-cap.com/" target="_blank"><i class="fa fa-external-link-square-alt fa-4x social social-gh"></i></a>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <div class="row">
+                        <img src="assets/images/rf.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Project: Stock Selection with Machine Learning</h1>
+                          <h5 class="text-muted">Feb – May 2019</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>Python, SQL, Scikit-Learn <br>
+                            Random Forest <br>
+                            Accuracy Competition<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <h1 class="portfolio-item-title"> Stock Selection with Machine Learning</h1>
+                      <p class="portfolio-item-description">New York University, New York, NY</p>
+                      <hr>
+                      • Classified stocks from NASDAQ in order to differentiate high-performance stocks based on historical data <br>
+                      • Queried stock prices using SQL and converted non-numerical values to numerical values <br>
+                      • Preprocessed data through by generating additional features and queried stocks using SQL <br>
+                      • Grew a Random Forest classifier with 100 decision trees and 6 splitting features and analyzed multiple simulations to prove
+                      stability of model, and achieved an average monthly annualized return of 16%<br>
+                      <hr>
+                      <a href="https://github.com/ZTang813/ML-Project-StockSelection" target="_blank"><i class="fa fa-github-square fa-4x social social-gh"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </section>
+          </div>
+
+          <!-- Others -->
+          <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab">
+            <section class="portfolio-section">
+              <h2 class="section-title"> </h2>
+              <div class="portfolio-wrapper hover-box">
+
+
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <div class="row">
+                        <img src="assets/images/rf.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Project: Portfolio Optimization</h1>
+                          <h5 class="text-muted">Feb - May 2020 </h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>Python, MatLab <br>
+                            Markowitz Optimization <br>
+                            Momentums, RSI, Quantile Trading<br>
+                            Backtesting <br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <h1 class="portfolio-item-title"> Portfolio Optimization </h1>
+                      <p class="portfolio-item-description">Cornell University, Ithaca, NY</p>
+                      <hr>
+                      • Constructed a trading strategy based on momentums and portfolio optimization and proved stability via backtesting<br>
+                      • Applied relative strength index and quantile trading methodologies to select stocks from NASDAQ 100 index<br>
+                      • Developed a Markowitz optimization algorithm that assigns weights to stocks based on user risk preferences<br>
+                      • Backtested strategy over a 10 year horizon and beat the benchmark annual return by an average of 40%<br>
+                      <a href="https://github.com/ZTang813/ML-Project-StockSelection" target="_blank"><i class="fa fa-github-square fa-4x social social-gh"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="card card-flip">
+                  <!-- front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <div class="row">
+                        <img src="assets/images/societe.png" class="col-6 portfolio-image" alt="project">
+                        <div class="col-6">
+                          <h1 class="portfolio-item-title">Intern: Société Générale Bank</h1>
+                          <h5 class="text-muted">May - Aug 2018</h5>
+                          <hr>
+                          <h3>Highlights</h3>
+                          <p>Excel, VBA<br>
+                            Visualization, Presentation <br>
+                            Bloomberg, Libor<br>
+                            Option Pricing <br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- back -->
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <!-- contents, row + img + words -->
+                      <h1 class="portfolio-item-title"> Global Markets Summer Analyst </h1>
+                      <p class="portfolio-item-description">Société Générale Bank, Beijing, China</p>
+                      <hr>
+                      • Developed Excel macros to process and visualize daily data changes, and synthesized stock data,
+                      trading data and client account balances from different departments to support senior management <br>
+                      • Priced LIBOR based swaps and options with Bloomberg, designed pitch books, and created presentations for clients <br>
+                      • Verified data integrity after software upgrades of the bank’s core system and data transfer between databases <br>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+          </div>
+
+        </div>
+        <hr>
+      </section>
+
+
+
+      <section class="container">
+        <div class="text-center center-block">
+          <p> Get in touch! </p>
+          <a href="https://www.facebook.com/profile.php?id=100002588962709" target="_blank"><i class="fa fa-facebook-square fa-3x social social-fb"></i></a>
+          <a href="https://www.linkedin.com/in/zhihao-tang/" target="_blank"><i class="fa fa-linkedin-square fa-3x social social-in"></i></a>
+          <a href="https://github.com/ZTang813/" target="_blank"><i class="fa fa-github-square fa-3x social social-gh"></i></a>
+          <a href="mailto:zt222@cornell.edu" target="_blank"><i class="fa fa-envelope-square fa-3x social social-em"></i></a>
+        </div>
+      </section>
+      <footer>
+        <div class="font-size-sm text-center text-muted">© All rights reserved. Made by Zac and JunJun</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- up button -->
+  <a class="top-link hide" href="" id="js-top"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+      <path d="M12 6H0l6-6z" />
+    </svg> </a>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/live-resume.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
